@@ -8,6 +8,7 @@ def info():
     3) exit program
     """)
 
+
 if __name__ == "__main__":
     print("Welcome to termcards, what do you want to do:")
     while True:
