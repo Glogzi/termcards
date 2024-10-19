@@ -2,6 +2,7 @@ import random
 import os
 
 def app(file):
+    os.system("cls || clear")
     green = '\033[42m'
     greent = '\033[92m'
     red = '\033[41m'
@@ -10,6 +11,10 @@ def app(file):
     magenta = '\033[35m'
     reset = '\033[0m'
 
+    if not os.path.isfile(f"flcs/{file}.flc"):
+        print(f"{redt}there is no flashcard set like that{reset}")
+        return
+    
     QnA = []
     with open(file, "r", encoding="utf-8") as f:
         QnA = f.readlines()

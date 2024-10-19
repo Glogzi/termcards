@@ -122,11 +122,11 @@ def app(flc_name):
             case "4":
                 os.system("cls || clear")
                 change_set()
-                return
             case "5":
                 return
             case "6":
                 delete_set(flc_name)
+                return
             
 if __name__ == "__main__":
     welcome()

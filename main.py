@@ -11,6 +11,8 @@ def info():
 
 
 if __name__ == "__main__":
+    if not os.path.exists("./flcs"):
+        os.makedirs("./flcs")
     print("Welcome to termcards, what do you want to do:")
     while True:
         info()
@@ -25,6 +27,4 @@ if __name__ == "__main__":
             case "2":
                 create.welcome()                
             case "3":
-                quit()
-        os.system("cls || clear")
-        
+                quit()        
