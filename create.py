@@ -41,8 +41,8 @@ def delete(flc):
             all_lines.pop(line_index-1)
             f.writelines(all_lines)
             return
-        except TypeError:
-            print("question not found")
+        except ValueError:
+            print("question not found, nothing was deleted")
             f.writelines(all_lines)
             return
         
