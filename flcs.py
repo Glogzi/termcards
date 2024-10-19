@@ -52,5 +52,5 @@ def app(file):
     input()
 
 if __name__ == "__main__":
-    print("please run main.py instead of this file")
-    input()
+    print("type name of a flashcard set")
+    app(f"flcs/{input(">")}.flc")
