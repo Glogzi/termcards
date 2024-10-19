@@ -1,4 +1,5 @@
 import flcs
+import create
 
 def info():
     print("""
@@ -20,7 +21,7 @@ if __name__ == "__main__":
                 except FileNotFoundError:
                     print("flashcard set not found")
             case "2":
-                print("not a function yet")
+                create.app()                
             case "3":
                 quit()
         
