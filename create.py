@@ -31,6 +31,8 @@ def change_set():
             directory = os.listdir("flcs/")
             for file in directory:
                 file_splitted = file.split(".")
+                if len(file_splitted) == 1:
+                    continue
                 if file_splitted[1] == "flc":
                     print(file_splitted[0])
             change_set()

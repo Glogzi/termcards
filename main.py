@@ -9,7 +9,6 @@ def info():
     3) exit program
     """)
 
-
 if __name__ == "__main__":
     if not os.path.exists("./flcs"):
         os.makedirs("./flcs")
@@ -19,11 +18,7 @@ if __name__ == "__main__":
         inp = input(">")
         match inp:
             case "1":
-                print("type name of a flashcard")
-                try:
-                    flcs.app(f"./flcs/{input(">")}.flc")
-                except FileNotFoundError:
-                    print("flashcard set not found")
+                flcs.welcome()
             case "2":
                 create.welcome()                
             case "3":
