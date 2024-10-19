@@ -27,3 +27,5 @@ this app includes flashcard sets creator, but you can also create them by yourse
 
 ## 🔥funfact🔥
 I originally made this app to study for chemistry test, first (before putting it on github) it only had flcs.py that could load only flashcard set named "flc.txt", but when i wanted to learn japanese i realised that this app will be more useful when it will be able to load many flashcard sets with different names, and when it will have flashcard sets creator, so I putted it on github and made this app better
+
+another fun fact is i had other flashcards apps before, but they were shitty comparing to this one, even tho previous ones was GUI
